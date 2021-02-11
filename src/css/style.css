@@ -1,3 +1,21 @@
-h1{
+.container{
+    text-align: justify;
+}
+.about{
+    display: flex;
+    margin-top: 5px;
+    text-align: center;
+    justify-content: center;
+}
+.red_price{
     color: red;
 }
+.p-3{
+    text-align: center;
+}
+img{
+    padding: 5px 0 ;
+}
+/*.list{*/
+/*    text-align: center;*/
+/*}*/
