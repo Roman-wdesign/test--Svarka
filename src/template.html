@@ -9,7 +9,53 @@
 </head>
 <body>
 <div class="container overflow-hidden  align-content-center">
-    <div class="row row-cols-4 row-cols-lg-4 g-3 ">
+
+<!--Dropdown-->
+    <div class="navbar navbar-fixed-top" >
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+                </a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a  class="entry_a"  href="#">Каталог оборудования </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">1 уровень</a>
+                                    <ul class="dropdown-menu sub-menu">
+                                        <li>
+                                           <a href="#">2 уровень</a>
+                                             <ul class="dropdown-menu sub-menu">
+                                                <li>
+                                                    <a href="#">3 уровень</a>
+                                                    <ul class="dropdown-menu sub-menu">
+                                                        <li><a href="#">4 уровень</a></li>
+                                                        <li><a href="#">4 уровень</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">1 уровень</a></li>
+                                <li><a href="#">1 уровень</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">1 уровень</a></li>
+                                <li><a href="#">1 уровень</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.nav-collapse -->
+            </div>
+        </div>
+    </div>
+    <div class="trigger"></div>
+    <hr>
+
+   <!--The  Block List-->
+    <div class="row row-cols-4 row-cols-lg-4 g-3 " id="list">
         <div class="col">
             <div class="p-3 m-6 border" >УШМ Bosch PWS 650-115
                 <img src="<%=require('../src/assets/img/Grind_maker.jpg')%>" class="grind" alt="">
@@ -17,7 +63,7 @@
                     <div class="about"><p>Тип</p> <p>Шлифмашина угловая</p></div>
                     <div class="about"><p>Максимальная мощность, Вт</p></div>
                     <div class="about"><p>Макс. диаметр диска, мм</p></div>
-                    <div class="price"><p>Цена <span class="red_price">2700</span></p></div>
+                    <div class="price"><p>Цена: <span class="red_price">2700</span></p></div>
                 </div>
                 <button type="button" class="btn btn-primary">Заказать</button>
             </div>
@@ -29,7 +75,7 @@
                     <div class="about"><p>Тип</p> <p>Шлифмашина угловая</p></div>
                     <div class="about"><p>Максимальная мощность, Вт</p></div>
                     <div class="about"><p>Макс. диаметр диска, мм</p></div>
-                    <div class="price"><p>Цена <span class="red_price">2700</span></p></div>
+                    <div class="price"><p>Цена: <span class="red_price">2700</span></p></div>
                 </div>
                 <button type="button" class="btn btn-primary">Заказать</button>
             </div>
@@ -41,7 +87,7 @@
                     <div class="about"><p>Тип</p> <p>Шлифмашина угловая</p></div>
                     <div class="about"><p>Максимальная мощность, Вт</p></div>
                     <div class="about"><p>Макс. диаметр диска, мм</p></div>
-                    <div class="price"><p>Цена <span class="red_price">2700</span></p></div>
+                    <div class="price"><p>Цена: <span class="red_price">2700</span></p></div>
                 </div>
                 <button type="button" class="btn btn-primary">Заказать</button>
             </div>
@@ -53,7 +99,7 @@
                     <div class="about"><p>Тип</p> <p>Шлифмашина угловая</p></div>
                     <div class="about"><p>Максимальная мощность, Вт</p></div>
                     <div class="about"><p>Макс. диаметр диска, мм</p></div>
-                    <div class="price"><p>Цена <span class="red_price">2700</span></p></div>
+                    <div class="price"><p>Цена: <span class="red_price">2700</span></p></div>
                 </div>
                 <button type="button" class="btn btn-primary">Заказать</button>
             </div>
@@ -65,7 +111,7 @@
                     <div class="about"><p>Тип</p> <p>Шлифмашина угловая</p></div>
                     <div class="about"><p>Максимальная мощность, Вт</p></div>
                     <div class="about"><p>Макс. диаметр диска, мм</p></div>
-                    <div class="price"><p>Цена <span class="red_price">2700</span></p></div>
+                    <div class="price"><p>Цена: <span class="red_price">2700</span></p></div>
                 </div>
                 <button type="button" class="btn btn-primary">Заказать</button>
             </div>
@@ -77,7 +123,7 @@
                     <div class="about"><p>Тип</p> <p>Шлифмашина угловая</p></div>
                     <div class="about"><p>Максимальная мощность, Вт</p></div>
                     <div class="about"><p>Макс. диаметр диска, мм</p></div>
-                    <div class="price"><p>Цена <span class="red_price">2700</span></p></div>
+                    <div class="price"><p>Цена: <span class="red_price">2700</span></p></div>
                 </div>
                 <button type="button" class="btn btn-primary">Заказать</button>
             </div>
@@ -89,7 +135,7 @@
                     <div class="about"><p>Тип</p> <p>Шлифмашина угловая</p></div>
                     <div class="about"><p>Максимальная мощность, Вт</p></div>
                     <div class="about"><p>Макс. диаметр диска, мм</p></div>
-                    <div class="price"><p>Цена <span class="red_price">2700</span></p></div>
+                    <div class="price"><p>Цена: <span class="red_price">2700</span></p></div>
                 </div>
                 <button type="button" class="btn btn-primary">Заказать</button>
             </div>
@@ -101,7 +147,7 @@
                     <div class="about"><p>Тип</p> <p>Шлифмашина угловая</p></div>
                     <div class="about"><p>Максимальная мощность, Вт</p></div>
                     <div class="about"><p>Макс. диаметр диска, мм</p></div>
-                    <div class="price"><p>Цена <span class="red_price">2700</span></p></div>
+                    <div class="price"><p>Цена: <span class="red_price">2700</span></p></div>
                 </div>
                 <button type="button" class="btn btn-primary">Заказать</button>
             </div>
@@ -113,7 +159,7 @@
                     <div class="about"><p>Тип</p> <p>Шлифмашина угловая</p></div>
                     <div class="about"><p>Максимальная мощность, Вт</p></div>
                     <div class="about"><p>Макс. диаметр диска, мм</p></div>
-                    <div class="price"><p>Цена <span class="red_price">2700</span></p></div>
+                    <div class="price"><p>Цена: <span class="red_price">2700</span></p></div>
                 </div>
                 <button type="button" class="btn btn-primary">Заказать</button>
             </div>
@@ -125,7 +171,7 @@
                     <div class="about"><p>Тип</p> <p>Шлифмашина угловая</p></div>
                     <div class="about"><p>Максимальная мощность, Вт</p></div>
                     <div class="about"><p>Макс. диаметр диска, мм</p></div>
-                    <div class="price"><p>Цена <span class="red_price">2700</span></p></div>
+                    <div class="price"><p>Цена: <span class="red_price">2700</span></p></div>
                 </div>
                 <button type="button" class="btn btn-primary">Заказать</button>
             </div>
@@ -137,7 +183,7 @@
                     <div class="about"><p>Тип</p> <p>Шлифмашина угловая</p></div>
                     <div class="about"><p>Максимальная мощность, Вт</p></div>
                     <div class="about"><p>Макс. диаметр диска, мм</p></div>
-                    <div class="price"><p>Цена <span class="red_price">2700</span></p></div>
+                    <div class="price"><p>Цена: <span class="red_price">2700</span></p></div>
                 </div>
                 <button type="button" class="btn btn-primary">Заказать</button>
             </div>
@@ -149,12 +195,116 @@
                     <div class="about"><p>Тип</p> <p>Шлифмашина угловая</p></div>
                     <div class="about"><p>Максимальная мощность, Вт</p></div>
                     <div class="about"><p>Макс. диаметр диска, мм</p></div>
-                    <div class="price"><p>Цена <span class="red_price">2700</span></p></div>
+                    <div class="price"><p>Цена: <span class="red_price">2700</span></p></div>
                 </div>
                 <button type="button" class="btn btn-primary">Заказать</button>
             </div>
         </div>
     </div>
+
+    <!--The  Table List-->
+    <table class="table" id="table">
+        <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Тип</th>
+            <th scope="col">Мощность, Вт</th>
+            <th scope="col">Напряжение</th>
+            <th scope="col">Тип запуска</th>
+            <th scope="col">Цена</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row"> <img src="<%=require('../src/assets/img/Grind_maker.jpg')%>" width="40px" height="40px" class="grind" alt=""></th>
+            <td>Угловая</td>
+            <td>650</td>
+            <td>220В</td>
+            <td>Безопасный</td>
+            <td>2700</td>
+        </tr>
+
+        </tbody>
+        <tbody>
+        <tr>
+            <th scope="row"> <img src="<%=require('../src/assets/img/Grind_maker.jpg')%>" width="40px" height="40px" class="grind" alt=""></th>
+            <td>Угловая</td>
+            <td>650</td>
+            <td>220В</td>
+            <td>Безопасный</td>
+            <td>2700</td>
+        </tr>
+
+        </tbody>
+        <tbody>
+        <tr>
+            <th scope="row"> <img src="<%=require('../src/assets/img/Grind_maker.jpg')%>" width="40px" height="40px" class="grind" alt=""></th>
+            <td>Угловая</td>
+            <td>650</td>
+            <td>220В</td>
+            <td>Безопасный</td>
+            <td>2700</td>
+        </tr>
+
+        </tbody>
+        <tbody>
+        <tr>
+            <th scope="row"> <img src="<%=require('../src/assets/img/Grind_maker.jpg')%>" width="40px" height="40px" class="grind" alt=""></th>
+            <td>Угловая</td>
+            <td>650</td>
+            <td>220В</td>
+            <td>Безопасный</td>
+            <td>2700</td>
+        </tr>
+
+        </tbody>
+        <tbody>
+        <tr>
+            <th scope="row"> <img src="<%=require('../src/assets/img/Grind_maker.jpg')%>" width="40px" height="40px" class="grind" alt=""></th>
+            <td>Угловая</td>
+            <td>650</td>
+            <td>220В</td>
+            <td>Безопасный</td>
+            <td>2700</td>
+        </tr>
+
+        </tbody>
+        <tbody>
+        <tr>
+            <th scope="row"> <img src="<%=require('../src/assets/img/Grind_maker.jpg')%>" width="40px" height="40px" class="grind" alt=""></th>
+            <td>Угловая</td>
+            <td>650</td>
+            <td>220В</td>
+            <td>Безопасный</td>
+            <td>2700</td>
+        </tr>
+
+        </tbody>
+        <tbody>
+        <tr>
+            <th scope="row"> <img src="<%=require('../src/assets/img/Grind_maker.jpg')%>" width="40px" height="40px" class="grind" alt=""></th>
+            <td>Угловая</td>
+            <td>650</td>
+            <td>220В</td>
+            <td>Безопасный</td>
+            <td>2700</td>
+        </tr>
+
+        </tbody>
+        <tbody>
+        <tr>
+            <th scope="row"> <img src="<%=require('../src/assets/img/Grind_maker.jpg')%>" width="40px" height="40px" class="grind" alt=""></th>
+            <td>Угловая</td>
+            <td>650</td>
+            <td>220В</td>
+            <td>Безопасный</td>
+            <td>2700</td>
+        </tr>
+
+        </tbody>
+
+    </table>
 </div>
+
 </body>
 </html>
