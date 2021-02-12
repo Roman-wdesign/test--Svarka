@@ -67,3 +67,37 @@ document.querySelectorAll('.col').forEach(e => {
 
     };
 })
+
+
+function multiplyMaker(x, a) {
+    return function (num) {
+        return (x *= num+a);
+    };
+    if (x>0){
+        console.log('true');
+        return true;
+    } else{
+        console.log('false');
+    }
+    return false;
+};
+console.log(multiplyMaker);
+
+
+
+// const test = {
+//     name: 'test object',
+//     createAnonFunction: function() {
+//         return function() {
+//             console.log(this.name);
+//             console.log(arguments);
+//         };
+//     },
+//
+//     createArrowFunction: function() {
+//         return () => {
+//             console.log(this.name);
+//             console.log(arguments);
+//         };
+//     }
+// };
