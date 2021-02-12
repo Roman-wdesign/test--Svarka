@@ -95,4 +95,14 @@ display: none;
 #trigger:hover #table{
     display: block;
 }
+span{
+    font-weight: 700;
+}
 
+
+.dragging {
+    opacity:0.7;
+}
+.over {
+    border: solid #143ed7;
+}
