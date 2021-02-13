@@ -69,12 +69,16 @@ document.querySelectorAll('.col').forEach(e => {
 })
 
 
+
+const y = ['1', '2'];
+
 function multiplyMaker(x, a) {
+
     return function (num) {
         return (x *= num+a);
     };
     if (x>0){
-        console.log('true');
+        console.log('true', y.length);
         return true;
     } else{
         console.log('false');
@@ -82,22 +86,3 @@ function multiplyMaker(x, a) {
     return false;
 };
 console.log(multiplyMaker);
-
-
-
-// const test = {
-//     name: 'test object',
-//     createAnonFunction: function() {
-//         return function() {
-//             console.log(this.name);
-//             console.log(arguments);
-//         };
-//     },
-//
-//     createArrowFunction: function() {
-//         return () => {
-//             console.log(this.name);
-//             console.log(arguments);
-//         };
-//     }
-// };
