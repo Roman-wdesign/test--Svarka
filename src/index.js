@@ -1,6 +1,3 @@
-import {reverseString} from "./js/reverse";
-// console.log (reverseString('Рекурсия'));
-
 
 import {length, substr} from "./js/strings";
 
