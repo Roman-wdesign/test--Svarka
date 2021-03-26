@@ -1,88 +1,36 @@
-import * as $ from 'jquery';
+import {reverseString} from "./js/reverse";
+// console.log (reverseString('Рекурсия'));
 
 
-import './css/style.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {length, substr} from "./js/strings";
 
-$('#trigger').hover(function(){
-    $('#list').fadeIn();
-    $('#table').hide();
-});
-
-$('#trigger').mouseenter(function(){
-    $('#table').show();
-    $('#list').hide();
-});
-
-$('.element_1').mouseleave(function(){
-    $('#table').hide();
-    $('#list').show();
-
-});
-
-
-//#list change name in HTML
-
-let table = document.getElementsByClassName('name_of');
-let editingTd;
-
-table.onclick = function(event){
-    let target = event.target.closest('.edit-cancel,.edit-ok,td');
-
-    if (!table.contains(target)) return;
-
-    if (target.className == 'edit-cancel') {
-        finishTdEdit(editingTd.elem, false);
-    } else if (target.className == 'edit-ok') {
-        finishTdEdit(editingTd.elem, true);
-    } else if (target.nodeName == 'TD') {
-        if (editingTd) return;
-
-        makeTdEditable(target);
+const reverse = (str) => {
+    if (length(str) < 2) {
+        return str;
+    } else {
+        const first = substr(str, 0, 1);
+        const rest = substr(str, 1, length(str) - 1);
+        return reverse(rest) + first;
     }
+
 };
+console.log('\x1b[33m%s\x1b[0m', reverse('Строка наоборот'));
+console.log(length('Длина строки'));
+
+let anyString = 'foo';
+console.log(substr(anyString, 1, 2));
 
 
-document.querySelectorAll('.col').forEach(e => {
-    e.draggable = true;
-    e.ondragstart = e => {
-        e.dataTransfer.setData("id", e.target.id);
-        e.target.classList.add('dragging');
+const sumSquareDifference = (n) => {
+    let summ = 0;
+    let squareSumm = 0;
+
+    for (let i = 1; i <= n; i++) {
+        summ = summ + i;
+        squareSumm = squareSumm + (i ** 2);
     }
-    e.ondragover = e => {
-        let old = document.querySelector('.over');
-        old && old.classList.remove('over')
-        e.target.classList.add('over');
-        e.preventDefault();
-    };
-    e.ondrop = e => {
-        let old = document.querySelector('.dragging');
-        old && old.classList.remove('dragging')
-        old = document.querySelector('.over');
-        old && old.classList.remove('over');
-        let v = e.target.innerHTML;
-        let fromEl = document.querySelector('#'+e.dataTransfer.getData('id'));
-        e.target.innerHTML = fromEl.innerHTML;
-        fromEl.innerHTML = v;
 
-    };
-})
-
-
-
-const y = ['1', '2'];
-
-function multiplyMaker(x, a) {
-
-    return function (num) {
-        return (x *= num+a);
-    };
-    if (x>0){
-        console.log('true', y.length);
-        return true;
-    } else{
-        console.log('false');
-    }
-    return false;
+    const summSquare = summ ** 2;
+    return summSquare - squareSumm;
 };
-console.log(multiplyMaker);
+console.log(sumSquareDifference(25));
